@@ -20,6 +20,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+  'GET /v1/api/project': 'ProjectController.find',
+  'POST /v1/api/project': 'ProjectController.create',
+  'PUT /v1/api/project': 'ProjectController.update',
+  'DELETE /v1/api/project/:id': 'ProjectController.destroy'
 
 
   /***************************************************************************
